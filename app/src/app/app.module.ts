@@ -13,9 +13,19 @@ import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { LandingComponent } from './landing/landing.component';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, FooterComponent, HomeComponent, LoginComponent, RegisterComponent, LandingComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    FooterComponent,
+    HomeComponent,
+    LoginComponent,
+    RegisterComponent,
+    LandingComponent,
+    SearchComponent,
+  ],
   imports: [
     BrowserModule,
     FormsModule,

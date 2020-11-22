@@ -11,12 +11,15 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   config: SwiperOptions = {
+    autoplay: true,
+    // initialSlide: 1,
+    // slidesPerView: 3,
     pagination: { el: '.swiper-pagination', clickable: true },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    spaceBetween: 30,
+    spaceBetween: 0,
   };
 
   ngOnInit(): void {}

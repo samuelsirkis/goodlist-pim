@@ -23,8 +23,6 @@
     "@angular/router": "~11.0.0",
     "angular-font-awesome": "^3.1.2",
     "bootstrap": "^4.5.3",
-    "flat-icons": "^1.0.0",
-    "flaticon": "^0.1.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
     "ngx-useful-swiper": "^10.0.1",
