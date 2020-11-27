@@ -27,6 +27,8 @@
     "jquery": "^3.5.1",
     "ngx-useful-swiper": "^10.0.1",
     "popper.js": "^1.16.1",
+    "primeicons": "^4.1.0",
+    "primeng": "^11.0.0-rc.1",
     "rxjs": "~6.6.0",
     "swiper": "^6.3.5",
     "tslib": "^2.0.0",

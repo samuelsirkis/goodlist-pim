@@ -6,12 +6,39 @@
   background-color: #6da830;
 }
 
+.navbar-menu {
+  position: fixed;
+  padding-top: 85px;
+  width: 210px;
+  z-index: 998;
+  background-color: #678f40;
+
+  text-transform: uppercase;
+}
+
+.navbar-user {
+  color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #36501c;
+}
+
+.navbar-menu-item{
+  padding-left: 15px;
+  color: #f3f3f3
+}
+.navbar-menu-item a{
+  color: #bebebe
+}
+.navbar-menu-item a :hover{
+  color: #678f40
+}
+
 #mainNav .btn-success:hover {
   opacity: 0.9;
 }
 
 #mainNav .navbar-toggler {
-  font-size: 12px;
   right: 0;
   text-transform: uppercase;
   color: #fff;

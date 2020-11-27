@@ -3,71 +3,77 @@
     <div class="row no-gutters overflow-auto">
       <div class="col-md-6">
         <div class="main-banner">
-          <img src="../assets/img/banner/banner-1.jpg" class="img-fluid full-width main-img" alt="banner">
+          <img src="../assets/img/banner/banner-1.jpg" class="img-fluid full-width main-img" alt="banner" />
           <div class="overlay-2 main-padding">
             <a href="../index.html" type="button" class="btn btn-primary btn-lg btn-block">Voltar para página Home</a>
           </div>
-          <img src="../assets/img/banner/burger.png" class="footer-img" alt="footer-img">
+          <img src="../assets/img/banner/burger.png" class="footer-img" alt="footer-img" />
         </div>
       </div>
       <div class="col-md-6">
         <div class="section-2 user-page main-padding">
           <div class="login-sec">
             <div class="login-box">
-              <form>
+              <form #userForm="ngForm" role="form" [ngClass]="{ focused: focus === true }" (ngSubmit)="save(userForm)">
                 <h4 class="text-light-black fw-600">Criar Conta</h4>
+                <div *ngIf="userForm.invalid" class="alert alert-danger">
+                  Falha na validação dos campos.
+                </div>
                 <div class="row">
-                  <div class="col-lg-6 col-md-12 col-sm-6">
-                    <div class="form-group">
-                      <label class="text-light-white fs-14">Primeiro nome</label>
-                      <input type="text" name="#" class="form-control form-control-submit" placeholder="Primeiro nome"
-                        required>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12 col-sm-6">
-                    <div class="form-group">
-                      <label class="text-light-white fs-14">Último nome</label>
-                      <input type="text" name="#" class="form-control form-control-submit" placeholder="Último nome"
-                        required>
-                    </div>
-                  </div>
                   <div class="col-12">
                     <div class="form-group">
-                      <label class="text-light-white fs-14"></label>
-                      <input type="email" name="#" class="form-control form-control-submit" placeholder="Email"
-                        required>
+                      <label class="text-light-white fs-14">Primeiro Nome</label>
+                      <input type="text" name="firstname" class="form-control form-control-submit"
+                        placeholder="Primeiro nome" required minlength="5" ngModel />
+                    </div>
+                    <div class="form-group">
+                      <label class="text-light-white fs-14">Último Nome</label>
+                      <input type="text" name="lastname" class="form-control form-control-submit"
+                        placeholder="Último nome" required minlength="5" ngModel />
+                    </div>
+                    <div class="form-group">
+                      <label class="text-light-white fs-14">Email</label>
+                      <input type="email" name="email" class="form-control form-control-submit" placeholder="Email"
+                        required minlength="10" ngModel email />
                     </div>
                     <div class="form-group">
                       <label class="text-light-white fs-14">Senha (minímo 8 caracteres)</label>
-                      <input type="password" id="password-field" name="#" class="form-control form-control-submit"
-                        value="password" placeholder="Password" required>
+                      <input type="password" id="password-field-1" name="password"
+                        class="form-control form-control-submit" value="password" placeholder="Password" required
+                        minlength="8" ngModel />
                       <div data-name="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></div>
                     </div>
                     <div class="form-group">
                       <label class="text-light-white fs-14">Confirmar senha</label>
-                      <input type="password" id="password-field" name="#" class="form-control form-control-submit"
-                        value="password" placeholder="Password" required>
+                      <input type="password" id="password-field-2" name="confirmpassword"
+                        class="form-control form-control-submit" value="password" placeholder="Confirmar Senha" required
+                        minlength="8" ngModel />
                       <div data-name="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></div>
                     </div>
                     <div class="form-group checkbox-reset">
                       <label class="custom-checkbox mb-0">
-                        <input type="checkbox" name="#"> <span class="checkmark"></span> Lembre-se de mim</label>
+                        <input type="checkbox" name="remember" ngModel />
+                        <span class="checkmark"></span> Lembre-se de mim</label>
                     </div>
                     <div class="form-group">
-                      <button type="submit" class="btn-second btn-submit full-width">Criar conta</button>
+                      <button type="submit" class="btn-second btn-submit full-width" [disabled]="!userForm.valid">
+                        Criar conta
+                      </button>
                     </div>
-                    <div class="form-group text-center"> <span>ou</span>
+                    <div class="form-group text-center"><span>ou</span></div>
+                    <div class="form-group">
+                      <button type="#" class="btn-second btn-facebook full-width">
+                        <img src="../assets/img/facebook-logo.svg" alt="btn logo" />Continue com Facebook
+                      </button>
                     </div>
                     <div class="form-group">
-                      <button type="submit" class="btn-second btn-facebook full-width">
-                        <img src="../assets/img/facebook-logo.svg" alt="btn logo">Continue com Facebook</button>
-                    </div>
-                    <div class="form-group">
-                      <button type="submit" class="btn-second btn-google full-width">
-                        <img src="../assets/img/google-logo.png" alt="btn logo">Continue com Google</button>
+                      <button type="#" class="btn-second btn-google full-width">
+                        <img src="../assets/img/google-logo.png" alt="btn logo" />Continue com Google
+                      </button>
                     </div>
                     <div class="form-group text-center">
-                      <p class="text-light-black mb-0">Já tem uma conta? <a href="login.html">Login</a>
+                      <p class="text-light-black mb-0">
+                        Já tem uma conta? <a href="/login">Login</a>
                       </p>
                     </div>
                   </div>

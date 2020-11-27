@@ -1,0 +1,320 @@
+.section-padding {
+  padding: 10px 0;
+}
+
+.bg-black {
+  background-color: #282A36;
+}
+
+/*footer*/
+footer .ft-logo-box {
+  display: flex;
+  align-items: center;
+}
+footer .ft-logo-box .ft-logo {
+  margin-right: 25px;
+}
+footer .ft-social-media {
+  display: block;
+  align-items: center;
+  height: 100%;
+  padding-top: 80px;
+}
+footer .ft-social-media ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+footer .ft-social-media ul li {
+  margin-left: 15px;
+  border: 1px solid #ada3a3;
+  transition: 0.3s;
+}
+footer .ft-social-media ul li a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ada3a3;
+  transition: 0.3s;
+  text-decoration: none;
+}
+footer .ft-social-media ul li a i {
+  font-size: 18px;
+}
+footer .ft-social-media ul li:first-child {
+  margin-left: 0;
+}
+footer .subscribe_form button {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  z-index: 999;
+}
+.copyright .medewithlove {
+  overflow: hidden;
+}
+.copyright .madewithlove a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.copyright .medewithlove a:hover i {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.copyright .medewithlove a i {
+  color: red;
+}
+.hm-list.hm-instagram {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+.hm-list.hm-instagram li {
+  overflow: hidden;
+}
+.hm-list.hm-instagram li {
+  position: relative;
+  margin-right: 0;
+}
+.hm-list li {
+  display: inline-block;
+  margin-right: 15px;
+}
+.hm-list.hm-instagram li img {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 0px;
+}
+.hm-list.hm-instagram li:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+footer .subscribe_form input {
+  padding: 10px 55px 10px 10px;
+}
+footer .ft-social-media ul li:hover {
+  border-color: #6da830;
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+footer .ft-social-media ul li:hover a {
+  color: #6da830;
+  transform: rotate(25deg);
+  transition: 0.3s;
+}
+footer .ft-logo-box {
+  padding-bottom: 80px;
+}
+footer .footer-links,
+footer .footer-contact {
+  padding-top: 80px;
+}
+footer .footer-links ul,
+footer .footer-contact ul {
+  margin-bottom: 10px;
+}
+footer .footer-contact li {
+  margin-bottom: 10px;
+}
+footer .footer-contact li a {
+  text-decoration: underline;
+}
+footer .footer-links ul li {
+  margin-bottom: 5px;
+}
+footer .footer-links .appimg {
+  margin-bottom: 10px;
+}
+/*footer-top*/
+.footer-top .icon-box {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 150px;
+  word-break: break-all;
+}
+.footer-top .icon-box span i {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.footer-top .icon-box span {
+  display: block;
+  font-size: 12px;
+}
+/*copyright*/
+.copyright {
+  padding: 15px 0;
+}
+.copyright .payment-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.copyright .copyright-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.breadcrumb .breadcrumb-item {
+  margin: 0;
+}
+.breadcrumb {
+  margin: -20px;
+  background-color: #fff;
+  padding: 1.5rem 20px;
+  border-bottom: 1px solid #4329a333;
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+.breadcrumb .breadcrumb-item a {
+  color: #131313;
+  font-weight: 600;
+}
+.breadcrumb-item.active {
+  color: #6da830;
+}
+.our-articles .blog-page-banner:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(46, 45, 45, 0.6), transparent);
+}
+.our-articles .blog-inner {
+  position: relative;
+  margin-top: -450px;
+  display: flex;
+}
+.side-blog .side-post {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.side-blog .content-wrap {
+  flex: 0 0 calc(100% - 100px);
+  max-width: calc(100% - 100px);
+}
+.side-blog .thumb-img {
+  position: relative;
+  overflow: hidden;
+  flex: 0 0 100px;
+  max-width: 100px;
+  margin-right: 15px;
+}
+.side-bar .blog-tags a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: #4329a333 solid 1px;
+  margin: 0 5px 10px 0;
+  background: #f5f5f5;
+  font-weight: 500;
+  color: #000000de;
+}
+.side-bar .trending-blog-cat li {
+  display: flex;
+  position: relative;
+}
+.side-bar .trending-blog-cat li a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  text-transform: capitalize;
+  justify-content: space-between;
+}
+.side-bar .large-product-box {
+  position: relative;
+  height: auto;
+  padding-bottom: 0;
+  right: 0;
+  left: 0;
+}
+.side-bar .large-product-box .category-type a {
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 15px;
+}
+.side-bar .main-padding {
+  padding: 15px;
+}
+.side-bar .inner-wrapper {
+  z-index: 1;
+}
+.side-bar .main-banner,
+.side-bar .section-2 {
+  height: auto;
+}
+.side-bar .main-padding img {
+  width: 110px;
+}
+.side-bar .main-banner .footer-img {
+  max-width: 200px;
+}
+.side-bar .inner-wrapper .main-page .login-box {
+  display: block;
+}
+.our-articles .blog-services-wrapper {
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.our-articles .blog-services-wrapper .post-meta {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 0;
+}
+.our-articles .blog-services-wrapper .author-meta {
+  margin-left: 20px;
+}
+
+.exclusive-deals .deals-heading {
+  padding: 15px 0;
+}
+.exclusive-deals .deals-image {
+  display: flex;
+  align-self: center;
+  align-items: center;
+}
+/*product-box-2*/
+.product-box-2 {
+  display: flex;
+}
+.product-box-2 .product-img {
+  width: 120px;
+  height: 112px;
+}
+.product-box-2 .product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.local-deals .btn-first {
+  margin: 20px auto 40px;
+}
+
+.page-banner {
+  height: 270px;
+}
+.page-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.page-banner > .overlay-2 > .container > .row {
+  padding-top: 10px;
+}
+.tag-share {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
